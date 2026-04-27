@@ -7,6 +7,7 @@ import Histoires from './components/Histoires.jsx';
 import Creativite from './components/Creativite.jsx';
 import Tarifs from './components/Tarifs.jsx';
 import Contact from './components/Contact.jsx';
+import Team from './components/Team.jsx';
 import Footer from './components/Footer.jsx';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       }
 
       // Update active section based on scroll position
-      const sections = ['header', 'histoires', 'creativite', 'tarifs', 'contact'];
+      const sections = ['header', 'histoires', 'creativite', 'tarifs', 'contact', 'team'];
       const scrollPosition = window.pageYOffset + 100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -76,7 +77,8 @@ function App() {
     { id: 'histoires', name: 'Histoires' },
     { id: 'creativite', name: 'Créativité' },
     { id: 'tarifs', name: 'Tarifs' },
-    { id: 'contact', name: 'Contact' }
+    { id: 'contact', name: 'Contact' },
+    { id: 'team', name: 'Équipe' }
   ];
 
   return (
@@ -94,6 +96,7 @@ function App() {
       <Creativite />
       <Tarifs />
       <Contact />
+      <Team />
       <Footer />
     </div>
   );
